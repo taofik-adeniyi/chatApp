@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    background-color: hsl(270, 20%, 96%);
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 0.2fr;
+}
+.side {
+    display: flex;
+}
+.colored {
+    border-radius: 0 0 60% 30%;
+    background-color:hsl(264, 100%, 61%);
+    width: 400px;
+    min-height: 650px;
+}
+.chat-interface {
+    width: 270px;
+    min-height: 380px;
+    box-shadow: 
+       inset 0 -3em 3em rgba(0,0,0,0.1), 
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+    border-radius: 25px;
+    margin: 100px 0 0 -50px;
+    background-color: hsl(0, 0%, 100%);
+}
+.chat-body {
+    background-color: hsl(270, 20%, 96%);
+    margin: 0 5px 5px 5px;
+}
+.message {
+    max-width: 50%;
+    padding: 7px;
+    background-color:hsl(206, 6%, 79%);
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 10px;
+}
+.left-message-last {
+    max-width: 50%;
+    padding: 7px;
+    background-color: hsl(206, 6%, 79%);
+    margin: 175px 0 0 10px;
+    border-radius: 10px;
+    font-size: 10px;
+}
+.dogs-images {
+    float: right;
+    margin: 5px 10px 0 0;
+}
+.dogs-images img {
+    border-radius: 10px;
+    width: 50px;
+}
+.message-right {
+    float: right;
+    background-color: hsl(0, 0%, 100%);
+}
+.cut-out {
+    width: 60%;
+    height: 25px;
+    background-color: hsl(0, 0%, 100%);
+    margin: 5px auto;
+    border-radius: 0 0 15px 15px;
+    z-index: 5;
+}
+.chat-header {
+    width: 96%;
+    height: 60px;
+    margin: 10px 5px 5px 5px;
+    border-radius: 20px 20px 0 0;
+    background-image: linear-gradient(to left,hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+}
+.heading {
+    font-weight: 700;
+    font-size: 40px;
+}
+.content {
+    width: 60%;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: hsl(270, 7%, 64%);
+}
+.grid-two {
+    margin-top: 250px;
+    padding-left: 20px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    grid-column: span 3;
+    margin-top: 50px;
+}
+.card-walk {
+    background-image: linear-gradient(to left,hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    max-width: 50%;
+    padding: 7px;
+    margin: 5px 0 0 10px;
+    border-radius: 10px;
+    font-size: 10px;
+}
+.input {
+    background-color: hsl(270, 20%, 96%);
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 20px;
+    color: hsl(206, 6%, 79%);
+}
+.icons {
+    color: hsl(271, 36%, 24%);
+    float: right;
+    margin-right: 10px;
+}
+.coco {
+    color: hsl(0, 0%, 100%);
+}
+.dollar {
+    float: right;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+.prof-left-arrow {
+    margin-left: 5px;
+    color: hsl(0, 0%, 100%);
+}
+.prof-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: -5px;
+}
+.profile-container {
+    display: flex;
+}
+.prof-name {
+    font-size: 10px;
+    margin-left: 10px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+}
+.available {
+    font-weight: normal;
+    color: hsl(270, 20%, 96%);
+}
+.notifier {
+    margin-left: 38%;
+}
+@media only screen and (max-width: 750px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto auto;
+    }
+    .side {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .colored {
+        border-radius: 0 0 60% 30%;
+        background-color:hsl(264, 100%, 61%);
+        width: 50%;
+        min-height: 650px;
+    }
+    .chat-interface {
+        width: 60%;
+        min-height: 380px;
+        box-shadow: 
+           inset 0 -3em 3em rgba(0,0,0,0.1), 
+                 0 0  0 2px rgb(255,255,255),
+                 0.3em 0.3em 1em rgba(0,0,0,0.3);
+        border-radius: 25px;
+        margin: 100px 0 0 -30%;
+        background-color: hsl(0, 0%, 100%);
+    }
+    .grid-two {
+        grid-column: span 1;
+        grid-row: span 1;
+        margin-top: 20px;
+        text-align: center;
+        padding: 20px;
+    }
+    .content {
+        width: 100%;
+    }
+    .heading {
+        font-size: 30px;
+    }
+    footer {
+        grid-column: span 1;
+        grid-row: span 1;
+        margin: 0;
+    }
+}
